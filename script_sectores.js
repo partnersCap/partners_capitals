@@ -212,3 +212,4 @@ document.querySelectorAll('.nav-link, .dropdown-menu a, .btn-primary').forEach(l
     animateOnScroll();
   }
 ;
+

@@ -761,11 +761,42 @@ nav a:hover span.material-icons-round {
 }
 
 /* ======= PORTFOLIO SECTION ======= */
+/* ================================
+   Portfolio Section
+   ================================ */
+
 .portfolio-section {
   padding: clamp(4rem, 8vw, 6rem) 5%;
   background-color: var(--gray-light);
 }
 
+/* Centrado de títulos */
+.portfolio-section .section-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+}
+
+.portfolio-section .section-pre-title {
+  font-size: 1rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-section .section-title {
+  font-size: 2rem;
+  color: var(--black);
+  margin: 0.5rem 0;
+}
+
+.portfolio-section .section-description {
+  font-size: 1.1rem;
+  color: var(--gray-dark);
+  margin-top: 0.5rem;
+}
+
+/* Carrusel */
 .portfolio-carousel {
   position: relative;
   max-width: 1200px;
@@ -889,6 +920,7 @@ nav a:hover span.material-icons-round {
   font-size: 1.2rem;
   color: var(--black);
   margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .portfolio-description {
@@ -921,6 +953,39 @@ nav a:hover span.material-icons-round {
 .sectors-section {
   padding: clamp(4rem, 8vw, 6rem) 5%;
   background-color: var(--white);
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center; /* centra todo el bloque */
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+}
+
+.section-pre-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.section-description {
+  font-size: 1rem;
+  color: var(--gray-dark);
 }
 
 .sectors-grid {
@@ -979,6 +1044,7 @@ nav a:hover span.material-icons-round {
 .sector-list {
   list-style: none;
   margin-bottom: 1.5rem;
+  padding: 0;
 }
 
 .sector-list li {
@@ -1004,6 +1070,25 @@ nav a:hover span.material-icons-round {
   gap: 1rem;
   margin-top: 1.5rem;
 }
+
+.stat {
+  flex: 1;
+  text-align: center;
+}
+
+.stat-static {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--gray-dark);
+  display: block;
+}
+
 
 /* ======= FEATURES SECTION ======= */
 .features-section {
@@ -1670,4 +1755,10 @@ nav a:hover span.material-icons-round {
     animation: none !important;
     transition: none !important;
   }
+}
+
+.stat-static {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
 }
